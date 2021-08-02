@@ -28,7 +28,7 @@ end
 function onChatMessage(id, name, message)
 	local identifiers = GetPlayerIdentifiers(id)
 	if identifiers == nil and not AllowGuestChat then -- the nil means they are a guest
-		SendChatMessage(id, "Sorry chat is disabled for guest players on this server.")
+		SendChatMessage(id, "Sorry chat is disabled for guest players on this server. Please register for a BeamMP Account to use the Chat functionality.")
 		return 1
 	end
 end
